@@ -1,0 +1,1 @@
+<input itemprop="query-input" type="text" id="search" class="form-control search-field tax-search-input" dir="ltr" value="" name="q" placeholder="Nhập mã số thuế, CMND, tên công ty" required="">

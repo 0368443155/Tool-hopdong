@@ -1,0 +1,71 @@
+<table class="table-taxinfo">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2" itemprop="name"><span class="copy" data-original-title="" title="">CÔNG TY TNHH CÔNG NGHỆ THƯƠNG MẠI DỊCH VỤ THẢO NGUYÊN XANH</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td><i class="fa fa-hashtag"></i> Mã số thuế</td>
+                                                <td itemprop="taxID"><span class="copy" data-original-title="" title="">0111431058</span></td>
+                                            </tr>
+                                            <tr>
+        <td><i class="fa fa-map-marker"></i> Địa chỉ Thuế</td>
+        <td itemprop="address"><span class="copy" id="tax-address-html" data-original-title="" title="">Số 27, ngõ 1 đường làng thôn Kim Bồng, Xã Ứng Hòa, TP Hà Nội, Việt Nam</span></td>
+    </tr>
+                                            <tr>
+        <td><i class="fa fa-map-marker"></i> Địa chỉ</td>
+        <td itemprop="address"><span class="copy" data-original-title="" title="">Số 27, ngõ 1 đường làng thôn Kim Bồng, Xã Ứng Hòa, Thành phố Hà Nội, Việt Nam</span></td>
+    </tr>
+                                            <tr>
+    <td><i class="fa fa-info"></i> Tình trạng</td><td id="tax-status-html"><a href="/tra-cuu-ma-so-thue-theo-trang-thai-cong-ty/nnt-dang-hoat-dong-19" title="tra cứu mã số thuế công ty Đang hoạt động">Đang hoạt động</a></td>
+</tr>
+                                            <tr>
+    <td><i class="fa fa-globe"></i> Tên quốc tế</td><td itemprop="alternateName"><span class="copy" data-original-title="" title="">THAO NGUYEN XANH TECHNOLOGY TRADING SERVICE COMPANY LIMITED</span></td>
+</tr>
+                                            
+                                            <tr itemprop="alumni" itemscope="" itemtype="http://schema.org/Person">
+        <td><i class="fa fa-user"></i> Người đại diện</td>
+        <td><span itemprop="name"><a href="https://masothue.com/Search/?q=L%C3%8A+TH%E1%BB%8A+THU+TRANG&amp;type=legalName" title="tra cứu mã số thuế công ty có giám đốc LÊ THỊ THU TRANG">LÊ THỊ THU TRANG</a></span> </td>
+    </tr>
+                                            <tr>
+    <td><i class="fa fa-phone"></i> Điện thoại</td><td itemprop="telephone"> <span class="copy" id="tel-full" data-original-title="" title="">0822213888</span> <button type="button" data-toggle="modal" data-target="#hide-data" class="btn-sm hide-data" data-hide="telephone|66044854|5234110ed989554dfb7fedbe0cf84683">Ẩn số điện thoại</button></td>
+</tr>
+                                            <tr>
+    <td><i class="fa fa-calendar"></i> Ngày hoạt động</td><td><span class="copy" data-original-title="" title="">2026-03-25</span></td>
+</tr>
+                                            <tr>
+        <td><i class="fa fa-users"></i> Quản lý bởi</td>
+        <td><span class="copy" data-original-title="" title="">Thuế cơ sở 20 thành phố Hà Nội</span></td>
+    </tr>
+                                            <tr>
+    <td><i class="fa fa-building"></i> Loại hình DN</td><td><a href="/tra-cuu-ma-so-thue-theo-loai-hinh-doanh-nghiep/2202-51" title="tra cứu mã số thuế Công ty trách nhiệm hữu hạn ngoài NN">Công ty trách nhiệm hữu hạn ngoài NN</a></td>
+</tr>
+                                            <tr>
+                <td><i class="fa fa-briefcase"></i> Ngành nghề chính</td>
+                <td><a href="/tra-cuu-ma-so-thue-theo-nganh-nghe/ban-le-do-dien-gia-dung-giuong-tu-ban-ghe-va-do-noi-that-tuong-tu-den-va-bo-den-dien-do-dung-gia-dinh-khac-chua-duoc-phan-vao-dau-trong-cac-cua-hang-chuyen-doanh-4759">Bán lẻ đồ điện gia dụng, giường, tủ, bàn, ghế và đồ nội thất tương tự, đèn và bộ đèn điện, đồ dùng gia đình khác chưa được phân vào đâu trong các cửa hàng chuyên doanh</a></td>
+            </tr>
+                                                                                        <tr>
+                                                <td colspan="2">
+                                                    Cập nhật mã số thuế <strong>0111431058</strong> lần cuối vào <em>2026-09-23 13:10:02</em>. Bạn muốn cập nhật thông tin mới nhất? <button type="button" data-toggle="modal" data-target="#modal-update" class="btn-sm hide-data btn-danger" data-update="0|0111431058|fbf31312e8d67a0d5e34a0566bcbed15">Cập nhật</button>                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <td colspan="2">
+                                                    <div class="alert alert-success" id="alert-app" role="alert">
+                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                        </button>
+                                                        <i class="fa fa-bullhorn"></i> Tư vấn & quyết toán thuế <strong>1900 988 931</strong>.
+                                                        </div>
+                                                </td>
+                                            </tr> -->
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="alert alert-info" role="alert">
+                                                        <i class="fa fa-info-circle"></i> Nếu bạn có đề xuất tính năng giúp nâng cao hiệu suất làm việc hoặc có ý tưởng, góp ý cho hệ thống, vui lòng <a href="/lien-he" target="_blank">liên hệ</a>.
+                                                    </div>
+                                                </td>
+                                                                                            </tr>
+                                                                                    </tbody>
+                                    </table>

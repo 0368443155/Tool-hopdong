@@ -1,0 +1,40 @@
+{
+  "name": "hopdong-generator",
+  "version": "1.1.0",
+  "description": "Ứng dụng tự động tạo hợp đồng từ PDF hóa đơn",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "docxtemplater": "^3.43.0",
+    "pdf-parse": "^1.1.1",
+    "pizzip": "^3.1.7",
+    "puppeteer": "^23.0.0"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.hopdong.generator",
+    "productName": "Contract Automator Pro",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "extraResources": [
+      {
+        "from": "HĐ mẫu.docx",
+        "to": "HĐ mẫu.docx",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}

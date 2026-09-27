@@ -1,0 +1,14 @@
+appId: com.hopdong.generator
+productName: HopDong Generator
+directories:
+  output: dist
+
+win:
+  target:
+    - nsis
+  icon: assets/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

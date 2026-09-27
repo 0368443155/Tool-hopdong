@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Automator Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <h1 class="gradient-text">Contract Automator</h1>
+            <p class="subtitle">Trích xuất Hóa Đơn PDF & Tự động tạo Hợp Đồng Word hàng loạt</p>
+        </header>
+        
+        <main class="glass-panel">
+            <div class="controls">
+                <button id="fileInputBtn" class="btn primary">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    Chọn Hóa Đơn PDF
+                </button>
+                <button id="outDirBtn" class="btn primary outline">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                    Thư mục Xuất
+                </button>
+                <button id="processBtn" class="btn secondary" disabled>
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Bắt đầu Xử Lý
+                </button>
+            </div>
+            
+            <div class="output-path-display" style="margin-bottom: 1rem; font-size: 0.9rem;">
+                <p>Nơi lưu file: <span id="outDirDisplay" style="color: var(--text-muted);">Chưa chọn (mặc định: thư mục Output)</span></p>
+            </div>
+
+            <div class="file-list-container">
+                <ul id="fileList">
+                    <li class="empty-state">📂 Nhấn "Chọn Hóa Đơn PDF" để bắt đầu...</li>
+                </ul>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tên File</th>
+                            <th>Trạng Thái Xử Lý</th>
+                        </tr>
+                    </thead>
+                    <tbody id="logTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading animation khi đang chạy vòng lặp -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p>Đang tự động hóa...</p>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

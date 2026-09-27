@@ -1,0 +1,8 @@
+node_modules/
+dist/
+Output/
+*.zip
+*.exe
+~$*
+debug_response.html
+.env
