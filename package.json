@@ -1,6 +1,6 @@
 {
   "name": "hopdong-generator",
-  "version": "1.1.0",
+  "version": "1.5.0",
   "description": "Ứng dụng tự động tạo hợp đồng từ PDF hóa đơn",
   "main": "src/main.js",
   "scripts": {
@@ -31,6 +31,13 @@
       {
         "from": "HĐ mẫu.docx",
         "to": "HĐ mẫu.docx",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "HĐ392_LEDVN.docx",
+        "to": "HĐ392_LEDVN.docx",
         "filter": [
           "**/*"
         ]

@@ -20,23 +20,78 @@
         </header>
         
         <main class="glass-panel">
-            <div class="controls">
-                <button id="fileInputBtn" class="btn primary">
-                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-                    Chọn Hóa Đơn PDF
-                </button>
-                <button id="outDirBtn" class="btn primary outline">
-                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-                    Thư mục Xuất
-                </button>
-                <button id="processBtn" class="btn secondary" disabled>
-                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    Bắt đầu Xử Lý
-                </button>
+            <div class="controls-section" style="margin-bottom: 20px; padding: 15px; border: 1px solid var(--border); border-radius: 12px; background: rgba(0,0,0,0.2);">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--secondary);">Nghiệp vụ Hóa Đơn Hàng Hóa</h3>
+                <div class="controls" style="flex-wrap: wrap;">
+                    <button id="fileInputBtn" class="btn primary">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        Chọn Hóa Đơn PDF
+                    </button>
+                    <button id="outDirBtn" class="btn primary outline">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                        Thư mục Xuất
+                    </button>
+                    <button id="constructionDirBtn" class="btn primary outline">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                        Thư mục Lọc HĐ Thi Công
+                    </button>
+                    <button id="processBtn" class="btn secondary" disabled>
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Xử Lý HĐ Hàng Hóa
+                    </button>
+                </div>
+                <div class="output-path-display" style="font-size: 0.9rem;">
+                    <p>Nơi lưu file Word: <span id="outDirDisplay" style="color: var(--text-muted);">Chưa chọn (mặc định: Output)</span></p>
+                    <p>Nơi lưu HĐ Thi Công (lọc ra): <span id="constructionDirDisplay" style="color: var(--text-muted);">Chưa chọn (mặc định: Output/HoaDonThiCong)</span></p>
+                </div>
             </div>
-            
-            <div class="output-path-display" style="margin-bottom: 1rem; font-size: 0.9rem;">
-                <p>Nơi lưu file: <span id="outDirDisplay" style="color: var(--text-muted);">Chưa chọn (mặc định: thư mục Output)</span></p>
+
+            <div class="controls-section" style="margin-bottom: 20px; padding: 15px; border: 1px solid var(--border); border-radius: 12px; background: rgba(0,0,0,0.2);">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--warning);">Nghiệp vụ Hóa Đơn Thi Công</h3>
+                <div class="controls" style="flex-wrap: wrap;">
+                    <button id="constFileInputBtn" class="btn primary">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        Chọn HĐ Thi Công (PDF)
+                    </button>
+                    <button id="pxkDirBtn" class="btn primary outline">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                        Thư mục Phiếu Xuất Kho
+                    </button>
+                    <button id="processConstBtn" class="btn secondary" disabled>
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Xử Lý HĐ Thi Công
+                    </button>
+                </div>
+                <div class="output-path-display" style="font-size: 0.9rem;">
+                    <p>Thư mục PXK: <span id="pxkDirDisplay" style="color: var(--text-muted);">Chưa chọn (Cần chọn để lấy danh sách hàng hóa)</span></p>
+                </div>
+            </div>
+
+            <div class="controls-section" style="margin-bottom: 20px; padding: 15px; border: 1px solid var(--border); border-radius: 12px; background: rgba(0,0,0,0.2);">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--primary);">Quản Lý Viết Tắt Tên Công Ty</h3>
+                <div class="controls">
+                    <button id="extractCompaniesBtn" class="btn primary outline">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        Lọc Công Ty từ File PDF
+                    </button>
+                    <button id="saveAllCompaniesBtn" class="btn secondary">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 5px;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        Lưu Tổng Tất Cả
+                    </button>
+                </div>
+                <div class="table-container" style="max-height: 250px; overflow-y: auto; margin-top: 15px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 70%;">Tên Công Ty</th>
+                                <th style="width: 30%;">Tên Viết Tắt</th>
+                            </tr>
+                        </thead>
+                        <tbody id="companiesTableBody">
+                            <tr><td colspan="2" class="text-center">Chưa có dữ liệu</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div class="file-list-container">
